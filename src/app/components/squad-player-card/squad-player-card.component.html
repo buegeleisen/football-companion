@@ -1,6 +1,16 @@
-<div class="bg-success rounded-md w-1/6">
-  <img class="p-1 w-3/4" src="assets/person-dummy.jpg" />
-  <p>Name</p>
-  <p>Position</p>
-  <p>Age</p>
+<div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+  <img
+    class="w-full h-1/2 object-cover"
+    [src]="player.photo"
+    alt="Player Image"
+  />
+
+  <div class="p-4 hover:via-pink">
+    <h2 class="text-xl font-bold text-gray-800 hover:via-pink">
+      {{ player.name }}
+    </h2>
+    <p class="text-gray-600">Position: {{ player.position }}</p>
+    <p class="text-gray-600">Number: {{ player.number }}</p>
+    <p class="text-gray-600">Age: {{ player.age }}</p>
+  </div>
 </div>

@@ -1,2 +1,32 @@
-<p class="pt-40">squad works!</p>
-<app-squad-player-card></app-squad-player-card>
+<h2 class="pt-40">Goalkeepers</h2>
+<div
+  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 p-4"
+>
+  @for(goalkeeper of goalkeepers; track $index) {
+  <app-squad-player-card [player]="goalkeeper"></app-squad-player-card>
+  }
+</div>
+<h2>Defenders</h2>
+<div
+  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 p-4"
+>
+  @for(goalkeeper of defenders; track $index) {
+  <app-squad-player-card [player]="goalkeeper"></app-squad-player-card>
+  }
+</div>
+<h2>Midfielders</h2>
+<div
+  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 p-4"
+>
+  @for(goalkeeper of midfielders; track $index) {
+  <app-squad-player-card [player]="goalkeeper"></app-squad-player-card>
+  }
+</div>
+<h2>Attackers</h2>
+<div
+  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 p-4"
+>
+  @for(goalkeeper of attackers; track $index) {
+  <app-squad-player-card [player]="goalkeeper"></app-squad-player-card>
+  }
+</div>
